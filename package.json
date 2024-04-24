@@ -1,6 +1,6 @@
 {
   "name": "pw-test-logs-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Report failed test to test resource ctx",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

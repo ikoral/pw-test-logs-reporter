@@ -25,7 +25,7 @@ const StatusMap = new Map<string, number>([
 type Log = {
     organizationId: number
     testcase: string
-    line: number
+    line: string
     error: string | undefined
     stacktrace: string | undefined
 }
@@ -69,7 +69,7 @@ export class TestLogsReporter implements Reporter {
                     const testLog: Log = {
                         organizationId,
                         testcase: test.title,
-                        line: test.location.line,
+                        line: `PW - ${test.location.file} - ${test.location.line}`,
                         error: result.errors[0].message,
                         stacktrace: result.errors[0].stack,
                     }
