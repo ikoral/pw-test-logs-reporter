@@ -7,6 +7,10 @@
   "files": [
     "/lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikoral/pw-test-logs-reporter.git"
+  },
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "clean": "rimraf ./lib",
